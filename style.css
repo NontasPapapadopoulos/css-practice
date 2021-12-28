@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: "Raleway", sans-serif; */
+}
+
+/* navbar */
+
+.navbar {
+  /* top is needed for the navbar to be sticked on the top */
+  top: 0px;
+  background-color: #333;
+  color: #fff;
+  overflow: auto;
+  display: flex;
+  /* this moves the ul in the middle of the div */
+  align-items: center;
+  /* this moved the ul to the right side */
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-right: 5%;
+}
+
+li {
+  padding: 10px;
+  align-self: flex-end;
+}
+
+li:hover,
+.navbar h1:hover {
+  border-bottom: 1px solid orange;
+  color: orange;
+}
+
+/* Log in form */
+
+.container {
+  background-color: #344a72;
+  padding-top: 20%;
+  padding-bottom: 3%;
+}
+.container-form {
+  margin: auto;
+  max-width: 30vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+h1 {
+  margin: 15px;
+}
+
+.container-header {
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.form input {
+  width: 100%;
+  margin: 3% 0;
+  height: 25px;
+  border: #ddd 1px solid;
+  border-radius: 4px;
+}
+
+.container .terms {
+  padding: 5% 11%;
+  text-align: center;
+  font-size: small;
+  line-height: 20px;
+}
+.container .terms a {
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #37a08e;
+  border-radius: 3px;
+  border: none;
+  height: 25px;
+  color: #fff;
+}
+
+.log-in {
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-size: small;
+}
+
+.log-in a {
+  text-decoration: none;
+  color: #37a08e;
+}
+
+/* flex-box */
+
+.flex-box {
+  display: flex;
+  align-items: flex-center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: peru;
+}
+
+.flex-item {
+  border: 1px black solid;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+}
+
+footer i {
+  color: #fff;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+footer li {
+  margin: 1%;
+  margin-top: 5%;
+}
+
+.copy-right {
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .container-form {
+    max-width: 60vw;
+  }
+}
